@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>GestiCom</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <script src="css/bootstrap/js/jquery.js"></script>
+        <script src="css/bootstrap/js/bootstrap.js"></script>
+        <script src="js/jsMenu.js"></script>
+        
+        <link href="css/styleMenu.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" >
+        <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
+       
+    </head>
+    <body>
+       <div class="nav-side-menu">
+    <div class="brand">Gestion de compras</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="glyphicon glyphicon-home"></i> Inicio
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="glyphicon glyphicon-th-list active"></i> Administraci&oacute;n <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    
+                    <li><a href="javascript:mostrarContenido('admin/usuario/frmTipoUsuario')">Tipo usuario</a></li>
+                    <li><a href="javascript:mostrarContenido('admin/usuario/mainMenuUser')">Usuarios</a></li>
+                    <li><a href="#">Asignar permisos</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Proveedores</a></li>
+                    <li><a href="#">Centro de costos</a></li>
+                    <li><a href="#">Ivas</a></li>
+                    <li><a href="#">Retenciones</a></li>
+                    <li><a href="#">Rete ica</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="glyphicon glyphicon-pencil"></i> Solicitudes de compra<span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li>Crear solicitud</li>
+                  <li>Anular solicitud</li>
+                  <li>Editar solicitud</li>
+                </ul>
+
+
+                <li>
+                  <a href="#"><i class="glyphicon glyphicon-ok"></i> Aprobar solicitudes</a>
+                </li>
+                
+
+
+                 <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#">
+                  <i class="glyphicon glyphicon-thumbs-up"></i> Orden de compra <span class="arrow"></span>
+                  </a>
+                  </li>
+                  <ul class="sub-menu collapse" id="new">
+                  <li>Generar orden de compra</li>
+                  <li>Anular orden de compra</li>
+                  <li>Cerrar orden de compra</li>
+                 </ul>
+
+                 <li data-toggle="collapse" data-target="#rece" class="collapsed">
+                  <a href="#">
+                      <i class="glyphicon glyphicon-arrow-right"></i>Recepci&oacute;n de productos <span class="arrow"></span>
+                  </a>
+                  </li>
+                  <ul class="sub-menu collapse" id="rece">
+                  <li>Facturaci&oacute;n</li>
+                  <li>Remisi&oacute;n</li>
+                  <li>Proveedor</li>
+                 </ul>
+            </ul>
+     </div>
+</div>  
+        <br><br> <br><br>
+        <div class="container" id="contenedor1" name="contenedor">
+            <div class="row-fluid">
+                <div class="span2"></div>
+                <div class="span8" id="contenedor" name="contenedor1"></div>
+                <div class="span2"></div>
+                
+            </div>
+            
+        </div>    
+      
+    </body>
+</html>
